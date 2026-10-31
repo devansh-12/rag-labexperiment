@@ -1,0 +1,35 @@
+As part of its ongoing commitment to Infrastructure & Lab Development, the Department of Computer Science & Engineering has established a dedicated high-performance GPU computing facility to support faculty and student research in Artificial Intelligence, Machine Learning, Deep Learning, and Data Science. The facility is built around a state-of-the-art enterprise GPU server designed for demanding, compute-intensive workloads and is available for use by researchers across the department.
+High GPU CapacityEnterprise-grade 4U rackmount server platform supporting up to 8 GPUs for scalable AI/ML workloads.
+Powerful Compute64-core / 128-thread AMD EPYC™ 9554 processor for high-throughput data pre-processing and parallel computation. ×2
+Dedicated AI Accelerator48 GB GDDR6 NVIDIA RTX 6000 Ada GPU for training and inference of large deep learning models.
+Fast Memory & Storage4 × 64 GB high-speed DDR5 RAMs paired with 2 TB NVMe SSD for rapid data access and model checkpointing.
+Ample Data Storage20 TB enterprise-grade HDD plus expandable M.2 storage for large research datasets.
+Reliable UptimeRedundant 3000W Titanium-rated power supplies ensure uninterrupted operation for long-running training jobs.
+| # | Component | Description | 
+|---|---|---|
+| 1 | Server Chassis | ESC8000A-E12 — 2× Socket, 24× DIMM slots, 4× 3.5" SATA + 2× NVMe bays, 1000 mm ball-bearing rail, 2+2×3000W 80+ Titanium redundant power supply, 4U chassis supporting up to 8 GPUs; front 1× PCIe x8 slot, rear 1× PCIe x16 slot with additional 12+4P GPU power cable kit. | 
+| 2 | Processor | AMD EPYC™ 9554 — 64 Cores / 128 Threads, 3.1 GHz–3.75 GHz boost, 256 MB L3 Cache, 360 W TDP. | 
+| 3 | Memory | 64 GB Registered DDR5, 4800 MHz / 5600 MHz. | 
+| 4 | Primary Storage | 2 TB NVMe 4th Generation Enterprise M.2 SSD. | 
+| 5 | Storage Expansion | Hyper M.2 x16 Card v2 — 4× M.2 sockets. | 
+| 6 | Bulk Storage | 20 TB 3.5" WD Ultrastar, 7200 RPM, SATA Enterprise HDD. | 
+| 7 | GPU | NVIDIA RTX 6000 Ada — 48 GB GDDR6 memory. | 
+The facility is intended to support a broad range of research and academic activities, including:
+Deep Learning & AITraining and fine-tuning of deep neural networks, CNNs, and transformer-based models.
+Computer VisionLarge-scale image and video processing, object detection, and segmentation research.
+Natural Language ProcessingLanguage model experimentation, text analytics, and generative AI research.
+High-Performance ComputingLarge-scale simulations, numerical computation, and parallel algorithm development.
+Bioinformatics & Data ScienceGenomics, medical imaging, and other GPU-accelerated data-intensive research.
+Student ProjectsHands-on project work for PhD, M.Tech, and final-year B.Tech students under faculty supervision.
+Who Can Use It
+- Faculty members of the Department of Computer Science & Engineering.
+- Research scholars, PhD candidates, and PG/UG students working on faculty-supervised research or projects.
+How to Request Access
+Submit a request through the department's laboratory in-charge / HOD along with a brief note on the research requirement and expected resource usage.
+Scheduling
+Usage is scheduled and monitored to ensure fair and efficient sharing of GPU resources among all researchers.
+Usage Policy
+Users are expected to follow departmental data-handling, security, and lab-usage policies at all times.
+Dr. Dhananjay Kalbande
+HoD, Department of Computer Science & Engineering
+Empowering Research through High-Performance Computing

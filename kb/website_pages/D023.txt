@@ -1,0 +1,5 @@
+Course Description
+CE301 is a core course for Semester V Computer Engineering covering Supervised Learning (Linear Regression, Logistic Regression, SVMs, Decision Trees, Random Forests, Gradient Boosted Trees), Unsupervised Learning (K-Means, Hierarchical Clustering, PCA, t-SNE), Bias-Variance Tradeoff, and Cross-Validation strategies.
+
+Laboratories and Implementation
+Laboratory assignments use Python, Scikit-learn, Pandas, and Matplotlib. Students implement gradient descent algorithms from scratch and benchmark ensemble models on Kaggle benchmark datasets.

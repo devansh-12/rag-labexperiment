@@ -1,0 +1,50 @@
+# SPIT RAG Chatbot – CE413 Experiment 8
+# Install: pip install -r requirements.txt
+
+# ── Web framework ──────────────────────────────────────────────────────────────
+fastapi>=0.111
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+
+# ── Web scraping ───────────────────────────────────────────────────────────────
+requests>=2.31
+httpx>=0.27
+beautifulsoup4>=4.12
+lxml>=5.2
+trafilatura>=1.9
+playwright>=1.43           # pip install playwright && playwright install chromium
+scrapy>=2.11               # optional: for production crawling
+
+# ── Deduplication ─────────────────────────────────────────────────────────────
+datasketch>=1.6            # MinHash LSH
+
+# ── Document extraction ────────────────────────────────────────────────────────
+pymupdf>=1.24              # PDF extraction (fitz)
+pandas>=2.2
+
+# ── Tokeniser ─────────────────────────────────────────────────────────────────
+tiktoken>=0.7
+
+# ── Embeddings + reranking ────────────────────────────────────────────────────
+sentence-transformers>=3.0
+torch>=2.2                 # or torch-cpu variant
+
+# ── Vector index ──────────────────────────────────────────────────────────────
+faiss-cpu>=1.8             # use faiss-gpu if CUDA available
+
+# ── Sparse retrieval ──────────────────────────────────────────────────────────
+rank-bm25>=0.2
+
+# ── Evaluation ────────────────────────────────────────────────────────────────
+ragas>=0.2
+openevals>=0.1
+# langchain is a transitive dep of ragas; pinned via ragas
+
+# ── LLM clients ───────────────────────────────────────────────────────────────
+groq>=0.9.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+numpy>=1.26
+tqdm>=4.66
+python-dotenv>=1.0
+pydantic>=2.7

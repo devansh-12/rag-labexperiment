@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPIT RAG Assistant | CE413 Generative AI</title>
+  <meta name="description" content="Domain-specific RAG chatbot for Sardar Patel Institute of Technology – CE413 Generative AI Lab Experiment 8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/style.css?v=2.1" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════ HEADER ════════════════════════════════ -->
+<header class="app-header">
+  <div class="header-left">
+    <div class="logo-mark">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+        <circle cx="14" cy="14" r="13" stroke="url(#lg1)" stroke-width="2"/>
+        <path d="M8 14h4l2-5 2 10 2-5h2" stroke="url(#lg2)" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round"/>
+        <defs>
+          <linearGradient id="lg1" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#7c3aed"/><stop offset="1" stop-color="#06b6d4"/>
+          </linearGradient>
+          <linearGradient id="lg2" x1="8" y1="14" x2="20" y2="14" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#a78bfa"/><stop offset="1" stop-color="#34d399"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div>
+      <h1 class="app-title">SPIT RAG Assistant</h1>
+      <p class="app-subtitle">CE413 · Experiment 8 · Generative AI Lab</p>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="status-badge" id="statusBadge">
+      <span class="status-dot"></span>
+      <span id="statusText">Connecting…</span>
+    </div>
+    <div class="mode-pill" id="modePill">DEMO</div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════ CANVAS ════════════════════════════════ -->
+<div class="app-canvas">
+
+  <!-- ── LEFT: Config panel ───────────────────────────────────────────────── -->
+  <aside class="panel panel-config" id="configPanel">
+    <div class="panel-header">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93A10 10 0 0 0 4.93 19.07m14.14 0A10 10 0 0 0 4.93 4.93"/>
+      </svg>
+      Pipeline Config
+    </div>
+
+    <label class="cfg-label">Retriever Mode</label>
+    <div class="segmented-control" id="retrieverControl">
+      <button type="button" class="seg-btn active" data-val="hybrid">Hybrid</button>
+      <button type="button" class="seg-btn" data-val="dense">Dense</button>
+      <button type="button" class="seg-btn" data-val="bm25">BM25</button>
+      <button type="button" class="seg-btn" data-val="mmr">MMR</button>
+      <button type="button" class="seg-btn" data-val="rerank">Rerank</button>
+    </div>
+
+    <label class="cfg-label">
+      Top-k &nbsp;<span class="cfg-val" id="kDisplay">3</span>
+    </label>
+    <input type="range" class="slider" id="kSlider" min="1" max="10" value="3" />
+    <div class="slider-ticks">
+      <span>1</span><span>5</span><span>10</span>
+    </div>
+
+    <label class="cfg-label">Chunker Strategy</label>
+    <select class="cfg-select" id="chunkerSelect">
+      <option value="C1">C1 – Fixed 500 tok</option>
+      <option value="C2">C2 – Fixed 200 tok</option>
+      <option value="C3">C3 – Recursive</option>
+      <option value="C4">C4 – Heading-aware</option>
+      <option value="C5">C5 – Semantic</option>
+      <option value="C6">C6 – Parent-child</option>
+    </select>
+
+    <label class="cfg-label">
+      Score Threshold &nbsp;<span class="cfg-val" id="tauDisplay">0.00</span>
+    </label>
+    <input type="range" class="slider" id="tauSlider" min="0" max="100" value="0" step="1" />
+    <div class="slider-ticks"><span>0</span><span>0.5</span><span>1.0</span></div>
+    <p class="cfg-note" id="thresholdHint">Active for dense, MMR, and rerank scores.</p>
+
+    <label class="cfg-label">Embedding Model</label>
+    <select class="cfg-select" id="embedSelect">
+      <option value="A">A – bge-small-en-v1.5</option>
+      <option value="B">B – bge-base-en-v1.5</option>
+    </select>
+
+    <div class="cfg-divider"></div>
+
+    <div class="cfg-label">Quick Questions</div>
+    <div class="quick-q-list" id="quickQList">
+      <button type="button" class="quick-q">What is SPIT?</button>
+      <button type="button" class="quick-q">What are the departments at SPIT?</button>
+      <button type="button" class="quick-q">How are admissions done?</button>
+      <button type="button" class="quick-q">What is the placement record?</button>
+      <button type="button" class="quick-q">Who is the principal of SPIT?</button>
+      <button type="button" class="quick-q">What is course CE413?</button>
+    </div>
+
+    <div class="cfg-divider"></div>
+    <section class="evaluation-panel" aria-labelledby="evaluationTitle">
+      <div class="cfg-label" id="evaluationTitle">RAG Evaluation</div>
+      <label class="cfg-note" for="evaluationSize">Questions from the evaluation set</label>
+      <select class="cfg-select" id="evaluationSize">
+        <option value="1">Smoke test · 1 question</option>
+        <option value="5" selected>Quick run · 5 questions</option>
+        <option value="10">Standard run · 10 questions</option>
+        <option value="30">Full set · 30 questions</option>
+      </select>
+      <button type="button" class="eval-btn" data-evaluator="openevals">Run OpenEvals</button>
+      <button type="button" class="eval-btn eval-btn-secondary" data-evaluator="ragas">Run RAGAS</button>
+      <p class="cfg-note" id="evaluationStatus" role="status">Evaluations use the selected retriever and index; judge-provider quotas may limit large runs.</p>
+      <div class="evaluation-scores" id="evaluationScores" aria-live="polite"></div>
+    </section>
+
+    <div class="cfg-divider"></div>
+    <button type="button" class="btn-clear" id="clearBtn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/>
+      </svg>
+      Clear chat
+    </button>
+  </aside>
+
+  <!-- ── CENTER: Chat window ──────────────────────────────────────────────── -->
+  <main class="panel panel-chat">
+    <div class="chat-messages" id="chatMessages">
+      <!-- Welcome state -->
+      <div class="welcome-state" id="welcomeState">
+        <div class="welcome-logo">
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+            <circle cx="28" cy="28" r="27" stroke="url(#wlg)" stroke-width="2" opacity="0.6"/>
+            <path d="M16 28h8l4-9 4 18 4-9h4" stroke="url(#wlg2)" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="wlg" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7c3aed"/><stop offset="1" stop-color="#06b6d4"/>
+              </linearGradient>
+              <linearGradient id="wlg2" x1="16" y1="28" x2="40" y2="28" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#a78bfa"/><stop offset="1" stop-color="#34d399"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <h2>Ask anything about SPIT</h2>
+        <p>I retrieve relevant documents from the knowledge base before generating grounded answers.<br/>
+        Sources and similarity scores are shown for every response.</p>
+        <div class="welcome-chips">
+          <span class="chip">📚 Departments</span>
+          <span class="chip">🎓 Admissions</span>
+          <span class="chip">💼 Placements</span>
+          <span class="chip">📄 Syllabi</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input bar -->
+    <form class="chat-input-bar" id="chatForm" onsubmit="event.preventDefault(); return false;">
+      <div class="input-wrap">
+        <textarea id="questionInput" class="chat-textarea"
+                  placeholder="Ask a question about SPIT…"
+                  rows="1" maxlength="1000"></textarea>
+        <button type="button" class="send-btn" id="sendBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+      <p class="input-hint">
+        Retriever: <strong id="hintRetriever">hybrid</strong> ·
+        k=<strong id="hintK">3</strong> ·
+        Chunker: <strong id="hintChunker">C1</strong>
+      </p>
+    </form>
+  </main>
+
+  <!-- ── RIGHT: Evidence + Metrics ───────────────────────────────────────── -->
+  <aside class="panel panel-right">
+
+    <!-- Retrieved Chunks -->
+    <div class="panel-section" id="chunksSection">
+      <div class="panel-header">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+        </svg>
+        Retrieved Evidence
+        <span class="badge" id="chunkCountBadge">–</span>
+      </div>
+      <div class="chunks-list" id="chunksList">
+        <div class="empty-panel">
+          <p>Retrieved chunks will appear here after you send a question.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Metrics -->
+    <div class="panel-section" id="metricsSection">
+      <div class="panel-header">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+        </svg>
+        Run Metrics
+      </div>
+      <div class="metrics-grid" id="metricsGrid">
+        <div class="metric-card">
+          <span class="metric-label">Retrieve</span>
+          <span class="metric-val" id="mRetrieve">–</span>
+          <span class="metric-unit">s</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-label">Rerank</span>
+          <span class="metric-val" id="mRerank">–</span>
+          <span class="metric-unit">s</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-label">Generate</span>
+          <span class="metric-val" id="mGenerate">–</span>
+          <span class="metric-unit">s</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-label">Total</span>
+          <span class="metric-val" id="mTotal">–</span>
+          <span class="metric-unit">s</span>
+        </div>
+      </div>
+
+      <!-- Latency bar chart -->
+      <div class="latency-chart" id="latencyChart">
+        <div class="lc-bar-wrap">
+          <span class="lc-label">Retrieve</span>
+          <div class="lc-track"><div class="lc-fill" id="lbRetrieve" style="width:0%;background:var(--violet)"></div></div>
+        </div>
+        <div class="lc-bar-wrap">
+          <span class="lc-label">Rerank</span>
+          <div class="lc-track"><div class="lc-fill" id="lbRerank" style="width:0%;background:var(--teal)"></div></div>
+        </div>
+        <div class="lc-bar-wrap">
+          <span class="lc-label">Generate</span>
+          <div class="lc-track"><div class="lc-fill" id="lbGenerate" style="width:0%;background:var(--emerald)"></div></div>
+        </div>
+      </div>
+
+      <!-- Per-run history sparkline -->
+      <div class="panel-header" style="margin-top:1rem">History</div>
+      <canvas id="historyChart" height="60"
+              style="width:100%;border-radius:8px;margin-top:.5rem"></canvas>
+    </div>
+
+  </aside>
+</div>
+
+<!-- ═══════════════════════════════════ TOAST ════════════════════════════════ -->
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="/static/js/main.js?v=2.1"></script>
+</body>
+</html>

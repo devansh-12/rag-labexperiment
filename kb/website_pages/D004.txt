@@ -1,0 +1,8 @@
+Central Library
+The SPIT Central Library holds more than 28,000 volumes of technical books, subscriptions to IEEE Xplore, ACM Digital Library, ScienceDirect, SpringerLink, and national and international journals. The library is fully automated with KOHA LMS and provides RFID-enabled book checkouts and 24/7 digital access.
+
+Laboratories and Computing Infrastructure
+The institute houses over 35 dedicated laboratories equipped with modern hardware, high-performance computing clusters with NVIDIA GPU workstations, 1 Gbps high-speed campus-wide fiber internet, cloud sandbox environments, and specialized IoT and robotics research setups.
+
+Hostels and Amenities
+Separate on-campus hostel facilities are provided for male and female students with dining mess, recreation rooms, and Wi-Fi connectivity. The campus also features open sports grounds for cricket and football, basketball courts, an auditorium, and subsidized food cafeterias.

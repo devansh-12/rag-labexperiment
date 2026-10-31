@@ -1,0 +1,1 @@
+{"job_id": "8f811c8d9ab2", "status": "completed", "phase": "Complete", "evaluator": "ragas", "completed": 1, "total": 1, "summary": {"faithfulness": 1.0, "answer_relevancy": 0.9999999999999998, "llm_context_precision_with_reference": 0.9999999999, "context_recall": 1.0, "factual_correctness(mode=f1)": 1.0}, "error": null, "output_file": "results/8f811c8d9ab2_run_ragas.csv"}

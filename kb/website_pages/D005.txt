@@ -1,0 +1,8 @@
+Overview and Degrees Offered
+The Department of Computer Engineering at SPIT was established in 1995 and offers B.Tech. in Computer Engineering (intake of 120 students), M.Tech. in Computer Engineering, and Ph.D. in Computer Engineering. The department is accredited by NBA (National Board of Accreditation) under Tier-I format.
+
+Key Laboratories
+The department features specialized laboratories including: Artificial Intelligence and Machine Learning Lab, High-Performance Computing Lab, Cloud Computing & Big Data Lab, Cybersecurity and Network Forensics Lab, Software Engineering Lab, and Computer Vision & Robotics Lab.
+
+Curriculum Focus Areas
+Key subject tracks encompass Generative AI (CE413), Natural Language Processing, Deep Learning, Distributed Systems, Compiler Design, Database Management Systems, Blockchain Technology, and Human-Computer Interaction.

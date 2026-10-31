@@ -1,0 +1,6 @@
+[
+  {
+    "heading": "Curriculum Modules",
+    "content": "CE402 covers Virtualization and Hypervisors, Containerization with Docker and Kubernetes, Cloud Service Models (IaaS, PaaS, SaaS), Cloud Storage and Consistency Models (CAP theorem, PACELC), Distributed Consensus (Raft, Paxos), Serverless computing with AWS Lambda, and Cloud Security."
+  }
+]

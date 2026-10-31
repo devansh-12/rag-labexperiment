@@ -1,0 +1,14 @@
+[
+  {
+    "heading": "Course Overview and Prerequisites",
+    "content": "CE413 - Generative AI is a Program Elective III course for Semester VII Computer Engineering students taught by Prof. Yogita Patil in AY 2026-27. Total credits: 3 (Theory: 3 hours/week). Prerequisites: CE301 Machine Learning, CE305 Deep Learning, Probability and Linear Algebra."
+  },
+  {
+    "heading": "Course Modules and Topics",
+    "content": "Module 1: Foundations of Deep Generative Models, Variational Autoencoders (VAEs), Latent Spaces and Reparameterization. Module 2: Generative Adversarial Networks (GANs), WGAN-GP, Conditional GANs, StyleGAN architectures. Module 3: Diffusion Models, DDPM, SDEs, Classifier-Free Guidance, Latent Diffusion and Stable Diffusion. Module 4: Autoregressive Transformers, GPT architectures, Attention mechanisms, FlashAttention, KV Caching. Module 5: Retrieval-Augmented Generation (RAG) architectures, dense embeddings, FAISS indexing, hybrid BM25 search, Cross-Encoder reranking, RAGAS and hallucination evaluation. Module 6: Parameter-Efficient Fine-Tuning (PEFT, LoRA, QLoRA), RLHF, DPO, and AI Alignment."
+  },
+  {
+    "heading": "Textbooks and References",
+    "content": "1. Foster, D., Generative Deep Learning: Teaching Machines to Paint, Write, Compose, and Play, 2nd Edition, O'Reilly Media. 2. Goodfellow, I., Bengio, Y., Courville, A., Deep Learning, MIT Press. 3. Lewis, P. et al., Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks, NeurIPS."
+  }
+]

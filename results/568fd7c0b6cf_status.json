@@ -1,0 +1,1 @@
+{"job_id": "568fd7c0b6cf", "status": "failed", "phase": "Failed", "evaluator": "ragas", "completed": 1, "total": 1, "summary": null, "error": "\"['factual_correctness'] not in index\"", "output_file": null}

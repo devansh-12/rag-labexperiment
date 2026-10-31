@@ -1,0 +1,72 @@
+doc_id,source_name,source_url,type,title,date_collected,local_path
+D000,About SPIT,https://www.spit.ac.in/about/,webpage,About Sardar Patel Institute of Technology,2026-10-07T08:57:58.078929+00:00,kb/website_pages/D000.txt
+D001,Vision and Mission,https://www.spit.ac.in/about/vision-mission/,webpage,"Vision, Mission and Quality Policy",2026-10-07T08:57:58.079246+00:00,kb/website_pages/D001.txt
+D002,History & Heritage,https://www.spit.ac.in/about/history/,webpage,History of Sardar Patel Institute of Technology,2026-10-07T08:57:58.079378+00:00,kb/website_pages/D002.txt
+D003,Governance & Leadership,https://www.spit.ac.in/governance/,webpage,"Governance, Leadership and Administration",2026-10-07T08:57:58.079494+00:00,kb/website_pages/D003.txt
+D004,Campus Facilities,https://www.spit.ac.in/campus/facilities/,webpage,Campus Facilities and Infrastructure,2026-10-07T08:57:58.079634+00:00,kb/website_pages/D004.txt
+D005,Computer Engineering Dept,https://www.spit.ac.in/departments/computer-engineering/,webpage,Department of Computer Engineering,2026-10-07T08:57:58.079752+00:00,kb/website_pages/D005.txt
+D006,Information Technology Dept,https://www.spit.ac.in/departments/information-technology/,webpage,Department of Information Technology,2026-10-07T08:57:58.079866+00:00,kb/website_pages/D006.txt
+D007,EXTC Department,https://www.spit.ac.in/departments/electronics-and-telecommunication/,webpage,Department of Electronics and Telecommunication Engineering,2026-10-07T08:57:58.080004+00:00,kb/website_pages/D007.txt
+D008,CSE Data Science & AI,https://www.spit.ac.in/departments/computer-science-data-science/,webpage,Department of Computer Science and Engineering (Data Science),2026-10-07T08:57:58.080211+00:00,kb/website_pages/D008.txt
+D009,MCA Department,https://www.spit.ac.in/departments/mca/,webpage,Department of Master of Computer Applications (MCA),2026-10-07T08:57:58.080362+00:00,kb/website_pages/D009.txt
+D010,Basic Sciences & Humanities,https://www.spit.ac.in/departments/applied-sciences/,webpage,Department of Applied Sciences and Humanities,2026-10-07T08:57:58.080462+00:00,kb/website_pages/D010.txt
+D011,Admissions,https://www.spit.ac.in/admissions/btech/,webpage,Undergraduate Admissions and Eligibility Criteria,2026-10-07T08:57:58.080568+00:00,kb/website_pages/D011.txt
+D012,Fee Structure,https://www.spit.ac.in/admissions/fees/,webpage,Fee Structure and Payment Guidelines,2026-10-07T08:57:58.080669+00:00,kb/website_pages/D012.txt
+D013,Scholarships,https://www.spit.ac.in/admissions/scholarships/,webpage,Financial Aid and Scholarships,2026-10-07T08:57:58.080769+00:00,kb/website_pages/D013.txt
+D014,Placements,https://www.spit.ac.in/placements/,webpage,Training & Placement Cell and Placement Statistics,2026-10-07T08:57:58.080865+00:00,kb/website_pages/D014.txt
+D015,Industry Partnerships,https://www.spit.ac.in/placements/mou-collaborations/,webpage,Industry MOUs and Corporate Collaborations,2026-10-07T08:57:58.080960+00:00,kb/website_pages/D015.txt
+D016,Student Activities & Clubs,https://www.spit.ac.in/student-activities/,webpage,"Student Activities, Technical Committees and Student Bodies",2026-10-07T08:57:58.081061+00:00,kb/website_pages/D016.txt
+D017,College Festivals,https://www.spit.ac.in/student-activities/festivals/,webpage,Annual Festivals: Oculus and Spoorthi,2026-10-07T08:57:58.081193+00:00,kb/website_pages/D017.txt
+D018,Incubation & Entrepreneurship,https://www.spit.ac.in/entrepreneurship/sp-tbi/,webpage,Sardar Patel Technology Business Incubator (SP-TBI),2026-10-07T08:57:58.081293+00:00,kb/website_pages/D018.txt
+D019,Academic Curriculum,https://www.spit.ac.in/academics/curriculum/,webpage,Academic Curriculum Structure and Credit System,2026-10-07T08:57:58.081446+00:00,kb/website_pages/D019.txt
+D020,Examination Scheme,https://www.spit.ac.in/academics/examination-scheme/,webpage,Examination Scheme and Evaluation Model,2026-10-07T08:57:58.081705+00:00,kb/website_pages/D020.txt
+D021,Academic Regulations,https://www.spit.ac.in/academics/regulations/,webpage,"Academic Regulations, Attendance Policy and ATKT Rules",2026-10-07T08:57:58.081920+00:00,kb/website_pages/D021.txt
+D022,CE413 Generative AI Syllabus,https://www.spit.ac.in/academics/syllabus/ce413-generative-ai/,webpage,CE413 Generative AI Course Specification,2026-10-07T08:57:58.082064+00:00,kb/website_pages/D022.txt
+D023,Machine Learning Syllabus,https://www.spit.ac.in/academics/syllabus/ce301-machine-learning/,webpage,CE301 Machine Learning Course Specification,2026-10-07T08:57:58.082297+00:00,kb/website_pages/D023.txt
+D024,Cloud Computing Syllabus,https://www.spit.ac.in/academics/syllabus/ce402-cloud-computing/,webpage,CE402 Cloud Computing & Distributed Systems,2026-10-07T08:57:58.082463+00:00,kb/website_pages/D024.txt
+D027,Mandatory Disclosures & Accreditation,https://www.spit.ac.in/mandatory-disclosures/,webpage,"Mandatory Disclosures, NBA and NAAC Accreditations",2026-10-07T08:57:58.082626+00:00,kb/website_pages/D027.txt
+D028,Research Policy,https://www.spit.ac.in/research/policy/,webpage,"Research, Consultancy and Innovation Policy",2026-10-07T08:57:58.082802+00:00,kb/website_pages/D028.txt
+D025,Student Code of Conduct & Anti-Ragging Policy,https://www.spit.ac.in/pdf/code-of-conduct.pdf,pdf,Institutional Regulations: Code of Conduct and Anti-Ragging Policy,2026-10-07T08:57:58.099435+00:00,kb/institutional_pdfs/D025_code_of_conduct.pdf
+D026,Examination Grievance & Revaluation Rules,https://www.spit.ac.in/pdf/exam-grievance-rules.pdf,pdf,Academic Regulations: Examination Grievance and Revaluation Rules,2026-10-07T08:57:58.110922+00:00,kb/institutional_pdfs/D026_examination_rules.pdf
+D029,Institutional ERP Course Catalog,erp.spit.ac.in/export/courses,erp_csv,SPIT ERP Academic Course Registration and Timetable Records,2026-10-07T08:57:58.111079+00:00,kb/erp_export/courses.csv
+D030,Home,https://www.spit.ac.in/,webpage,Sardar Patel Institute of Technology,2026-10-07T12:12:17.782481+00:00,kb/website_pages/D030.txt
+D031,About > Principals Message,https://www.spit.ac.in/about/principals-message/,webpage,Principal’s Message «  Sardar Patel Institute of Technology,2026-10-07T12:12:17.782481+00:00,kb/website_pages/D031.txt
+D032,About > Campus,https://www.spit.ac.in/about/campus/,webpage,Campus «  Sardar Patel Institute of Technology,2026-10-07T12:12:17.782481+00:00,kb/website_pages/D032.txt
+D033,About > Contact,https://www.spit.ac.in/about/contact/,webpage,Contact «  Sardar Patel Institute of Technology,2026-10-07T12:12:17.782481+00:00,kb/website_pages/D033.txt
+D034,About > Institutional Values,https://www.spit.ac.in/about/institutional-values/,webpage,Institutional Values «  Sardar Patel Institute of Technology,2026-10-07T12:12:17.782481+00:00,kb/website_pages/D034.txt
+D035,About > Kulpati Dr K M Munshi,https://www.spit.ac.in/about/kulpati-dr-k-m-munshi/,webpage,Founders Message «  Sardar Patel Institute of Technology,2026-10-07T12:12:17.782481+00:00,kb/website_pages/D035.txt
+D036,About > Organogram,https://www.spit.ac.in/about/organogram/,webpage,Organogram «  Sardar Patel Institute of Technology,2026-10-07T12:12:17.782481+00:00,kb/website_pages/D036.txt
+D054,Academic Calendar,https://www.spit.ac.in/academic-calendar/,webpage,Academic Calendar «  Sardar Patel Institute of Technology,2026-10-07T12:15:15.493227+00:00,kb/website_pages/D054.txt
+D055,Academics > Departments,https://www.spit.ac.in/academics/departments/,webpage,Departments «  Sardar Patel Institute of Technology,2026-10-07T12:15:19.164520+00:00,kb/website_pages/D055.txt
+D056,Academics > Graduate,https://www.spit.ac.in/academics/graduate/,webpage,UG Programme «  Sardar Patel Institute of Technology,2026-10-07T12:15:22.846560+00:00,kb/website_pages/D056.txt
+D057,Academics > Post Graduate,https://www.spit.ac.in/academics/post-graduate/,webpage,PG Programme «  Sardar Patel Institute of Technology,2026-10-07T12:15:26.128067+00:00,kb/website_pages/D057.txt
+D058,Academics > Ph D Programme,https://www.spit.ac.in/academics/ph-d-programme/,webpage,Ph.D. Programme «  Sardar Patel Institute of Technology,2026-10-07T12:15:29.609510+00:00,kb/website_pages/D058.txt
+D059,Academics > Faculty Empowerment Policy,https://www.spit.ac.in/academics/faculty-empowerment-policy/,webpage,Faculty Empowerment Policy «  Sardar Patel Institute of Technology,2026-10-07T12:15:32.966036+00:00,kb/website_pages/D059.txt
+D060,Academics > Students Empowerment Policy,https://www.spit.ac.in/academics/students-empowerment-policy/,webpage,Students Empowerment Policy «  Sardar Patel Institute of Technology,2026-10-07T12:15:36.163768+00:00,kb/website_pages/D060.txt
+D061,Administration > Governing Body,https://www.spit.ac.in/administration/governing-body/,webpage,Governing Body «  Sardar Patel Institute of Technology,2026-10-07T12:15:39.441830+00:00,kb/website_pages/D061.txt
+D062,Administration > Academic Council,https://www.spit.ac.in/administration/academic-council/,webpage,Academic Council «  Sardar Patel Institute of Technology,2026-10-07T12:15:42.730952+00:00,kb/website_pages/D062.txt
+D063,Administration > Finance Committee,https://www.spit.ac.in/administration/finance-committee/,webpage,Finance Committee «  Sardar Patel Institute of Technology,2026-10-07T12:15:45.227874+00:00,kb/website_pages/D063.txt
+D064,Administration > Committees,https://www.spit.ac.in/administration/committees/,webpage,Committees «  Sardar Patel Institute of Technology,2026-10-07T12:15:48.661358+00:00,kb/website_pages/D064.txt
+D065,Administration > Faculty,https://www.spit.ac.in/administration/faculty/,webpage,Faculty «  Sardar Patel Institute of Technology,2026-10-07T12:15:51.323345+00:00,kb/website_pages/D065.txt
+D066,Admissions,https://www.spit.ac.in/admissions/,webpage,Admissions 2026-27 «  Sardar Patel Institute of Technology,2026-10-07T12:15:56.466169+00:00,kb/website_pages/D066.txt
+D067,Nirf,https://www.spit.ac.in/nirf/,webpage,National Institutional Ranking Framework (NIRF) «  Sardar Patel Institute of Technology,2026-10-07T12:15:59.918266+00:00,kb/website_pages/D067.txt
+D068,Best Practices,https://www.spit.ac.in/best-practices/,webpage,Best Practices «  Sardar Patel Institute of Technology,2026-10-07T12:16:07.292647+00:00,kb/website_pages/D068.txt
+D069,2026 > 05 > 04 > Cut Off Marks For 2025 26 B Tech Dse Mca,https://www.spit.ac.in/2026/05/04/cut-off-marks-for-2025-26-b-tech-dse-mca/,webpage,Cut-off Marks for 2025-26 B.Tech/DSE/MCA «  Sardar Patel Institute of Technology,2026-10-07T12:16:12.830722+00:00,kb/website_pages/D069.txt
+D070,2026 > 08 > 27 > Research In The Era Of Generative Ai,https://www.spit.ac.in/2026/08/27/research-in-the-era-of-generative-ai/,webpage,Research in the Era of Generative AI «  Sardar Patel Institute of Technology,2026-10-07T12:16:15.541080+00:00,kb/website_pages/D070.txt
+D071,Sitemap Misc.Xml,https://www.spit.ac.in/sitemap-misc.xml,webpage,https://www.spit.ac.in/sitemap-misc.xml,2026-10-07T12:16:37.384246+00:00,kb/website_pages/D071.txt
+D072,Post Sitemap.Xml,https://www.spit.ac.in/post-sitemap.xml,webpage,https://www.spit.ac.in/post-sitemap.xml,2026-10-07T12:16:40.066978+00:00,kb/website_pages/D072.txt
+D073,Page Sitemap.Xml,https://www.spit.ac.in/page-sitemap.xml,webpage,https://www.spit.ac.in/page-sitemap.xml,2026-10-07T12:16:42.736016+00:00,kb/website_pages/D073.txt
+D074,Category > Exam,http://www.spit.ac.in/category/exam/,webpage,EXAM «  Sardar Patel Institute of Technology,2026-10-07T12:16:47.637681+00:00,kb/website_pages/D074.txt
+D075,Contact,https://www.spit.ac.in/contact/,webpage,Contact «  Sardar Patel Institute of Technology,2026-10-07T12:16:53.579058+00:00,kb/website_pages/D075.txt
+D076,Curriculum 2,https://www.spit.ac.in/curriculum-2/,webpage,Curriculum «  Sardar Patel Institute of Technology,2026-10-07T12:16:57.274438+00:00,kb/website_pages/D076.txt
+D077,Sp It Teaching Learning And Evaluation Tle Model,https://www.spit.ac.in/sp-it-teaching-learning-and-evaluation-tle-model/,webpage,"SP-IT Teaching, Learning, and Evaluation (TLE) Model: «  Sardar Patel Institute of Technology",2026-10-07T12:17:00.759976+00:00,kb/website_pages/D077.txt
+D078,Resources > It Infrastructure,https://www.spit.ac.in/resources/it-infrastructure/,webpage,IT Infrastructure «  Sardar Patel Institute of Technology,2026-10-07T12:17:06.887888+00:00,kb/website_pages/D078.txt
+D079,Home,http://moodle.spit.ac.in,webpage,Log in to Sardar Patel Institute of Technology,2026-10-07T12:17:09.951675+00:00,kb/website_pages/D079.txt
+D080,Infrastructure,https://cse.spit.ac.in/infrastructure,webpage,Infrastructure | CSE @ S.P.I.T.,2026-10-07T12:17:11.902474+00:00,kb/website_pages/D080.txt
+D081,Central Library,https://www.spit.ac.in/central-library/,webpage,Library «  Sardar Patel Institute of Technology,2026-10-07T12:17:14.670348+00:00,kb/website_pages/D081.txt
+D082,Deans,https://www.spit.ac.in/deans/,webpage,Deans «  Sardar Patel Institute of Technology,2026-10-07T12:17:18.154760+00:00,kb/website_pages/D082.txt
+D083,Academic-Schedule-2017-18-Odd-Sem-1.pdf,http://ash.spit.ac.in/files/2017/01/Academic-Schedule-2017-18-Odd-Sem-1.pdf,pdf,Institutional Document: Academic Schedule 2017 18 Odd Sem 1,2026-10-07T12:17:26.745666+00:00,kb/institutional_pdfs/D083_d3060477.pdf
+D084,Academic-Calendar-2017-18-Even-Semester-14-Dec-2017.pdf,http://www.spit.ac.in/wp-content/uploads/2014/08/Academic-Calendar-2017-18-Even-Semester-14-Dec-2017.pdf,pdf,Institutional Document: Academic Calendar 2017 18 Even Semester 14 Dec 2017,2026-10-07T12:17:28.233760+00:00,kb/institutional_pdfs/D084_1cbf27e7.pdf
+D085,Academic-Calendar-2017-18-Odd-Semester-12-May-20171-1.pdf,http://www.spit.ac.in/wp-content/uploads/2014/08/Academic-Calendar-2017-18-Odd-Semester-12-May-20171-1.pdf,pdf,Institutional Document: Academic Calendar 2017 18 Odd Semester 12 May 20171 1,2026-10-07T12:17:30.431906+00:00,kb/institutional_pdfs/D085_c3f9659d.pdf
+D086,Academic-Calendar-2018-19-Even_1_Aug_2018.pdf,http://www.spit.ac.in/wp-content/uploads/2018/08/Academic-Calendar-2018-19-Even_1_Aug_2018.pdf,pdf,Institutional Document: Academic Calendar 2018 19 Even_1_Aug_2018,2026-10-07T12:17:32.071348+00:00,kb/institutional_pdfs/D086_5454f25d.pdf
+D087,Academic-Calendar-2018-19-Odd-Sem_1_aug_2018.pdf,http://www.spit.ac.in/wp-content/uploads/2018/08/Academic-Calendar-2018-19-Odd-Sem_1_aug_2018.pdf,pdf,Institutional Document: Academic Calendar 2018 19 Odd Sem_1_Aug_2018,2026-10-07T12:17:33.810160+00:00,kb/institutional_pdfs/D087_d3a4c89d.pdf

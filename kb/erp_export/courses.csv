@@ -1,0 +1,7 @@
+course_code,course_name,department,semester,credits,instructor,day_slot,classroom
+CE413,Generative AI,Computer Engineering,7,3,Prof. Yogita Patil,"Monday 10:00 AM - 12:00 PM, Thursday 11:00 AM - 12:00 PM",Room 405 (CC3 Lab)
+CE414,Cloud Computing and DevOps,Computer Engineering,7,3,Prof. Sunil Ghane,"Tuesday 09:00 AM - 11:00 AM, Friday 10:00 AM - 11:00 AM",Room 402
+CE301,Machine Learning,Computer Engineering,5,4,Dr. D. R. Kalbande,"Wednesday 01:00 PM - 03:00 PM, Friday 02:00 PM - 04:00 PM",Auditorium Lab
+IT401,Enterprise Security and Cryptography,Information Technology,7,3,Dr. Radha Shankarmani,Tuesday 11:00 AM - 01:00 PM,Room 501
+ET302,Digital Signal Processing,Electronics and Telecommunication,5,4,Dr. Y. S. Rao,Monday 02:00 PM - 04:00 PM,Room 303
+CE499,B.Tech Capstone Project,Computer Engineering,7,6,Project Review Committee,Wednesday 09:00 AM - 05:00 PM,Project Center Lab
